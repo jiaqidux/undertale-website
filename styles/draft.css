@@ -1,0 +1,77 @@
+.text-box {
+    background-color: black;
+    width: 584px;
+    height: 144px;
+    color: white;
+    font-family: "undertale", Arial;
+    font-size: 28px;
+    line-height: 1.4;
+    border: 6px solid white;
+    position: absolute;
+    bottom: 10px;
+    left: 28px;
+    right: 28px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    padding: 8px 18px 8px 0px;
+}
+
+.asterisk {
+    text-align: center
+}
+
+.background {
+    display: grid;
+    grid-template-columns: 180px 180px 180px;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.background img {
+    height: 300px;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.text-box.hidden {
+    display: none;
+}
+
+.menu-button {
+    background-color: black;
+    color: white;
+    border: black;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 0px;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    justify-items: center;
+
+}
+
+.determination img {
+    position: absolute;
+    height: 16px;
+    left: -14px;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+.menu-button:hover .determination img {
+    opacity: 1;
+}
+

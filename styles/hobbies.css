@@ -1,0 +1,91 @@
+.menu {
+    background-color: black;
+    width: 612px;
+    height: 418px;
+    color: white;
+    font-family: "undertale", Arial;
+    font-size: 30px;
+    line-height: 1.4;
+    border-style: solid;
+    border-color: white;
+    border-width: 6px;
+    position: absolute;
+    top: 45px;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    justify-content: center;
+    align-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr 6px 1fr;
+}
+
+.menu-column {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    padding: 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 45px;
+    position: relative;
+    text-align: center;
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.menu-item {
+    background-color: black;
+    color: white;
+    border: black;
+    position: relative;
+    text-align: left;
+    display: inline-block;
+    padding: 5px 0px;
+    text-decoration: none;
+}
+
+.determination img {
+    position: absolute;
+    height: 18px;
+    left: -22px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+.menu-item:hover .determination img {
+    opacity: 1;
+}
+
+.menu-divider {
+    background-color: white;
+    width: 1px;
+    box-shadow: 3px 0 0 white;
+    align-self: center;
+    height: 65%;
+}
+
+.favorites-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.favorites-grid img {
+    width: 90px;
+}
+
+.favorites-grid.hidden {
+    display:none;
+}

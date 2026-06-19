@@ -1,0 +1,55 @@
+.menu {
+    background-color: black;
+    width: 612px;
+    height: 418px;
+    color: white;
+    font-family: "undertale", Arial;
+    font-size: 30px;
+    line-height: 1.4;
+    border: 6px solid white;
+    position: absolute;
+    top: 45px;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    padding: 20px;
+}
+
+.title {
+    font-size: 45px;
+    text-align: center;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.menu-item {
+    background-color: black;
+    color: white;
+    border: black;
+    position: relative;
+    text-align: left;
+    display: inline-block;
+    padding: 5px 0px;
+    text-decoration: none;
+}
+
+.determination img {
+    position: absolute;
+    height: 18px;
+    left: -22px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+.menu-item:hover .determination img {
+    opacity: 1;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link href="styles/general.css" rel="stylesheet">
+        <link href="styles/draft.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <title>My Website</title>
+    </head>
+    <body>
+        <div class="game-window">
+            <header class="game-header">
+                UNDERTALE
+                <a href="index.html" class="close-button">&#10005;</a>
+            </header>
+
+            <div class="background">
+                <div class="nap-house" onclick="showTextBox('nap-text')">
+                    <img src="images/nap-house.png" alt="Napstablook's house">
+                </div>
+
+                <div class="frisk" onclick="showTextBox('frisk-text')">
+                    <img src="images/frisk.png" alt="Frisk">
+                </div>
+
+                <div class="met-house" onclick="showTextBox('met-text')">
+                    <img src="images/met-house.png" alt="Mettaton's house">
+                </div>
+            </div>
+
+            <div class="text-box hidden" id="nap-text">
+                <div class="asterisk">*</div>
+                <div class="text">
+                    <p>Contact Information.</p>
+                    <div class="button-grid">
+                        <a href="contact-info.html" class="menu-button">
+                            Enter
+                            <div class="determination">
+                                <img src="images/determination.png" alt="Determination">
+                            </div>
+                        </a>
+                        <button class="menu-button" onclick="hideTextBox('nap-text')">
+                            Leave
+                            <span class="determination">
+                                <img src="images/determination.png" alt="Determination">
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-box hidden" id="frisk-text">
+                <div class="asterisk">*</div>
+                <div class="text">
+                    <p>You meet a mysterious person</p>
+                    <div class="button-grid">
+                        <button class="menu-button" onclick="showTextBox('presentation-text')">
+                            Greet
+                            <span class="determination">
+                                <img src="images/determination.png" alt="Determination">
+                            </span>
+                        </button>
+                        <button class="menu-button" onclick="hideTextBox('frisk-text')">
+                            Ignore
+                        <span class="determination">
+                            <img src="images/determination.png" alt="Determination">
+                        </span>
+                    </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-box hidden" id="presentation-text">
+                <div class="asterisk">*</div>
+                <div class="text">Hi! I'm Sonia. Welcome to my website!</div>
+            </div>
+
+            <div class="text-box hidden" id="met-text">
+                <div class="asterisk">*</div>
+                <div class="text">
+                    <p>Interests/Hobbies.</p>
+                    <div class="button-grid">
+                        <a class="menu-button" href="hobbies.html">
+                            Enter
+                            <span class="determination">
+                                <img src="images/determination.png" alt="Determination">
+                            </span>
+                        </a>
+                        <button class="menu-button" onclick="hideTextBox('met-text')">
+                            Leave
+                            <span class="determination">
+                                <img src="images/determination.png" alt="Determination">
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function showTextBox(id) {
+                document.querySelectorAll(".text-box").forEach(function(box) {
+        box.classList.add("hidden"); // Adds hidden class to all text-boxes
+    });
+                document.getElementById(id).classList.remove("hidden"); // Removes hidden class to id
+            }
+
+            function hideTextBox(id) {
+                document.getElementById(id).classList.add("hidden");
+            }
+        </script>
+    </body>
+</html>

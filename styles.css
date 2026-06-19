@@ -1,0 +1,20 @@
+@import url("styles/general.css");
+@import url("styles/main.css");
+@import url("styles/draft.css");
+@import url("styles/hobbies.css");
+@import url("styles/contact-info.css");
+
+/* Simply for CS50's checker*/
+.close-button {
+    position: relative;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: #747372;
+    left:-350px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}

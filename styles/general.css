@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "undertale";
+    src: url('fonts/undertale-fonts.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-window {
+    background-color: #1B215A;
+    width: 640px;
+    height: 480px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    border-color: #0C0C0C;
+    border-style: solid;
+    flex-shrink: 0;
+    transform: scale(min(1, calc((100vw - 20px) / 640px)));
+    transform-origin: center;
+}
+
+.game-header {
+    background-color: #DAD8D8;
+    width: 640px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #414040;
+    text-decoration: none;
+}
+
+.close-button {
+    position: relative;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: #747372;
+    left:-350px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}

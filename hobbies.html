@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link href="styles/general.css" rel="stylesheet">
+        <link href="styles/hobbies.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <title>Hobbies</title>
+    </head>
+    <body>
+        <div class="game-window">
+            <header class="game-header">
+                UNDERTALE
+                <a href="index.html" class="close-button">&#10005;</a>
+            </header>
+
+            <div class="background">
+                <div class="menu">
+
+                    <div class="menu-column">
+                        <div class="title">HOBBIES</div>
+
+                        <div class="hobbies-grid">
+                            <button class="menu-item" onclick="showFavorites('fav-games')">
+                                Games
+                                 <span class="determination">
+                                    <img src="images/determination.png" alt="Determination">
+                                 </span>
+                            </button>
+
+                            <button class="menu-item" onclick="showFavorites('fav-books')">
+                                Books
+                                <span class="determination">
+                                    <img src="images/determination.png" alt="Determination">
+                                </span>
+                            </button>
+
+                            <button class="menu-item" onclick="showFavorites('fav-movies-tv')">
+                                Movies/TV
+                                <span class="determination">
+                                    <img src="images/determination.png" alt="Determination">
+                                </span>
+                            </button>
+
+                            <button class="menu-item" onclick="showFavorites('fav-animes')">
+                                Animes
+                                <span class="determination">
+                                    <img src="images/determination.png" alt="Determination">
+                                </span>
+                            </button>
+
+                            <a href="draft.html" class="menu-item" >
+                                Back
+                                <span class="determination">
+                                    <img src="images/determination.png" alt="Determination">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="menu-divider"></div>
+
+                    <div class="menu-column">
+                        <div class="title">FAVORITES</div>
+
+                        <div class="favorites-grid hidden" id="fav-games">
+                            <div><img src="images/hades.jpg" alt="Hades"></div>
+                            <div><img src="images/silksong.jpg" alt="Hollow Knight: Silksong"></div>
+                            <div><img src="images/totk.jpeg" alt="The Legend of Zelda: TOTK"></div>
+                            <div><img src="images/undertale.JPG" alt="Undertale"></div>
+                        </div>
+
+                        <div class="favorites-grid hidden" id="fav-books">
+                            <div><img src="images/tsh.jpg" alt="The Secret History"></div>
+                            <div><img src="images/stormlight.jpg" alt="The Way of Kings"></div>
+                            <div><img src="images/orv.jpg" alt="Omniscient Reader's Viewpoint"></div>
+                            <div><img src="images/little-women.jpg" alt="Little Women"></div>
+                        </div>
+
+                        <div class="favorites-grid hidden" id="fav-movies-tv">
+                            <div><img src="images/zhz.jpg" alt="Empresses in the Palace"></div>
+                            <div><img src="images/interstellar.jpg" alt="Interstellar"></div>
+                            <div><img src="images/schindler.JPG" alt="Schindler's List"></div>
+                            <div><img src="images/dps.JPG" alt="Dead Poets Society"></div>
+                        </div>
+
+                        <div class="favorites-grid hidden" id="fav-animes">
+                            <div><img src="images/kiki.jpg" alt="Kiki's Delivery Service"></div>
+                            <div><img src="images/haikyuu.JPG" alt="Haikyu!"></div>
+                            <div><img src="images/your-name.jpeg" alt="Your Name"></div>
+                            <div><img src="images/aot.jpg" alt="Attack On Titan"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <script>
+                function showFavorites(id) {
+                    document.querySelectorAll(".favorites-grid").forEach(function(box) {
+                        box.classList.add("hidden");
+                    });
+
+                    document.getElementById(id).classList.remove("hidden");
+                }
+            </script>
+    </body>
+</html>

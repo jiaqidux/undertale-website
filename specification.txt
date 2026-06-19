@@ -1,0 +1,22 @@
+HTML tags:
+1. meta
+2. link
+3. script
+4. div
+5. header
+6. a
+7. img
+8. p
+9. button
+10. span
+
+CSS properties:
+1. position
+2. height
+3. width
+4. border-radius
+5. background-color
+
+JavaScript: I used JavaScript to toggle the visibility of text boxes and favorites panels by adding/removing the class "hidden" on click
+
+Bootstrap: I used the visually-hidden utility class

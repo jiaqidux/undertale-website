@@ -19,7 +19,4 @@ open index.html
 **Option 2: VS Code Live Server extension**   
 If you're using VS Code, install the "Live Server" extension, right-click `index.html`, and choose "Open with Live Server."
  
-## About
- 
-Created as part of Harvard's CS50 course, Week 8 (HTML, CSS, JavaScript) assignment.
  
